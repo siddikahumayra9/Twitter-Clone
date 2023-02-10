@@ -6,8 +6,9 @@ To make the project simple, we do not have a sign/login function.
 So there are not user accounts and follow function. You can challenge after you finish the course.
 Check out [LIVE DEMO here!!](/)
 ## Screenshot
-[image](<img width="654" alt="Screen Shot 2023-02-09 at 10 17 14 PM" src="https://user-images.githubusercontent.com/64049350/217991999-108fc4d7-b44d-422c-8cd6-6e8283549148.png">
-)
+<img width="654" alt="Screen Shot 2023-02-09 at 10 17 14 PM" src="https://user-images.githubusercontent.com/64049350/217992123-e955a860-2016-495b-8c63-6be9d95a7ba2.png">
+
+
 # Tech used
 * Html
 * Css
