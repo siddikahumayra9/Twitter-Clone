@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<link rel="icon" type="img/png" href="img/techis-logo.png">
+</link>
+<section class="content">
+    <header>
+        <img class="twitter" src="{% static 'img/twitter.png' %}" />
+
+        <h2 class='heading'> Home </h2>
+
+    </header>
+
+
+
+    <section class="post_form">
+        <form action="/" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <input type="text" name="name" placeholder="Name" required>
+            <textarea name="body" placeholder="What's happening? " required></textarea>
+            <input type="file" id="files" name="image"  />
+
+            <input class="submit" type="submit" value="Tweet" />
+        </form>
+    </section>
+    <section class="posts">
+        <ul>
+            {% for post in posts %}
+            <li>
+
+                <img class="menu_icon js-menu-icon" src="{% static 'img/menu.png' %}" />
+                <div class="menu">
+                    <div id="e">
+                        <a href="/edit/{{post.id}}/"> Edit </a> <br>
+                    </div>
+                    <div id="d">
+                        <a href="/delete/{{post.id}}/">Delete</a>
+                    </div>
+
+                </div>
+                <div class="logo">
+                    <img class='logo_1' src="{% static 'img/ima.jpeg' %}" />
+                </div>
+                <div class="name_body">
+                    <div class="name">{{post.name}}</div>
+                    <div class="datetime">{{post.created_at}}</div>
+                    <p>{{post.body}}</p>
+                    <div class="allign">
+                        {% if post.image %}
+                        <img class="body-image" src="{{post.image.url}}" alt="" />
+                        {% endif %}
+                    </div>
+                    <div class="icon_list">
+                        <a href="/like/{{post.id}}"> <img class="like" src="/static/img/like.png" alt="like" />
+                        </a>
+                        {{ post.likes }}
+                        <div class="hr">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/posts.js' %}"></script>
+</section>
+{% endblock %}

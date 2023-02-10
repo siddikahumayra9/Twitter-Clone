@@ -1,0 +1,373 @@
+/*
+common
+**********/
+html,
+body {
+    height: 100%
+}
+body {
+    background-color: #fcfcfc;
+} 
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid rgb(235, 218, 218);
+
+}
+.content header{
+    margin: 3%;
+}
+.hr {
+    position: absolute;
+    top: 2vw;
+    z-index: 1;
+    width: 142%;
+    left: -7.5%;
+}
+hr {
+    border: 1px solid rgb(194, 194, 194);
+}
+img.body-image {
+    width: 22vw;
+    border-radius: 20px;
+    height: 15vw;
+    
+}
+
+input[type="text"] {
+    margin-left: 1.5vw;
+}
+img.twitter {
+        width: 7%;
+        position: relative;
+        bottom: 3px;
+        margin-right: 1vw;
+        
+}
+h2.heading {
+    color: #000608;
+    font-weight: bold;
+    font-family: auto;
+}
+input.submit {
+    width: 19% !important;
+    /* height: 2.9vw; */
+    border-radius: 14px;
+    float: right;
+    color: white;
+    background-color: #00ACEE;
+}
+/* style="width:14vw; float: right; border-radius:20px;" */
+
+/* .r {
+    style="color:#000608; font-weight:bold ;"
+    font-weight: bold;
+} */
+/*
+post
+***********/
+.content header{
+    display: flex;
+    /* border-bottom: 1px solid rgb(236, 227, 227); */
+}
+
+.post_form {
+    padding: 4px 2px;
+    border-bottom: 1px solid #c6c7cf;
+    border: 1px solid #e5e5e5;
+}
+.post_form input {
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 1.5vw;
+    padding: 10px;
+    border:1px solid rgb(201 201 201);
+    
+}
+.posts li .menu_icon {
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    
+}
+input#files {
+    font-size: 12px;
+    border: none;
+    margin-left: 1vw;
+   
+}
+form {
+    margin-top: 1.4vw;
+}
+
+.posts li .menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    /* border: 1px solid #ccc; */
+    background-color: white;
+    padding:10px 15px;
+    font-size:  13px;
+    border-radius: 3px;
+}
+.posts li .menu a{
+    text-decoration: none;
+
+}
+
+.post_form textarea {
+    border-radius: 10px;
+    width: 70%;
+    padding:2%;
+    border:1px solid rgb(201 201 201);
+    margin-left: 1.5vw;
+}
+
+.posts ul{
+    padding: 0;
+}
+.posts li {
+    display: flex;
+    justify-content: center;
+    /* border-top: 1px solid rgb(205, 200, 200); */
+    /* border: 1px solid #2a1cc4; */
+    padding: 30px 40px;
+    list-style: none;
+    position: relative;
+    right: 2vw;
+    border: 1px solid #ffffff;
+}
+/* .posts li .logo {
+    flex-basis: 15%;
+    
+} */
+/* .posts li .logo img{
+    width: 60%;
+} */
+
+.posts li.name_body {
+    flex-basis: 85%;
+
+}
+img.logo_1 {
+    width: 4.4vw;
+    border: 6px solid #fafcfc;
+    border-radius: 50%;
+}
+
+
+
+.posts li .name_body .name_body {
+    font-weight:bold;
+}
+.posts li .name_body .datetime {
+    color: rgb(118, 114, 114);
+}
+@media screen and (max-width: 1600px) {
+    .posts li {
+
+        padding: 25px 105px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    img.body-image {
+        width: 30vw;
+        border-radius: 20px;
+        height: 20vw;
+    }
+    .posts li {
+
+        padding: 30px 85px;
+    }
+}
+@media screen and (max-width: 900px) {
+    img.body-image {
+        width: 40vw;
+        border-radius: 20px;
+        height: 25vw;
+    }
+    img.logo_1 {
+        width: 6vw;
+        border: 6px solid #fafcfc;
+        border-radius: 50%;
+    }
+    .posts li {
+        
+        padding: 30px 65px;
+    }
+}
+@media screen and (max-width: 700px) {
+    img.body-image {
+        width: 45vw;
+        border-radius: 20px;
+        height: 30vw;
+    }
+    img.logo_1 {
+        width: 7vw;
+        border: 6px solid #fafcfc;
+        border-radius: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .posts li .name_body .name {
+        font-size: 20px;
+    }
+    img.body-image {
+        width: 50vw;
+        border-radius: 20px;
+        height: 37vw;
+    }
+    img.logo_1 {
+        width: 11vw;
+        border: 6px solid #fafcfc;
+        border-radius: 50%;
+    }
+    img.twitter {
+        width: 8%;
+        position: relative;
+        bottom: 3px;
+        margin-right: 1vw;
+    }
+}
+@media screen and (max-width: 350px) {
+    img.twitter {
+        width: 11%;
+        position: relative;
+        bottom: 3px;
+        margin-right: 1vw;
+    }
+    img.logo_1 {
+        width: 13vw;
+        border: 6px solid #fafcfc;
+        border-radius: 50%;
+    }
+    .post_form input {
+       
+        padding: 4px;
+        
+    }
+}
+
+
+/* edit page  */
+section.main-header {
+    display: flex;
+    gap: 1%;
+}
+.content .main-header2 {
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+.main-header2 h2 {
+    color: #000608;
+    font-weight: bold;
+    font-family: auto;
+    margin-left: 0.5vw;
+}
+img.twitter2 {
+    width: 7%;
+    position: relative;
+    bottom: 3px;
+    background-color: #efefef;
+    border-radius: 3vw;
+}
+form.forms2 {
+    text-align: center;
+}
+img.main-img2 {
+    width: 60%;
+}
+.post_form2 input {
+    width: 64%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(249, 249, 250);
+}
+
+div#e {
+    border-radius: 11px;
+    background-color: #00ACEE;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    top: -3px;
+}
+#e a{
+    color: #fafcfc;
+}
+div#d {
+    border-radius: 11px;
+    background-color: #00ACEE;
+    text-align: center;
+    padding: 6px;
+}
+#d a{
+        color: #fafcfc;
+        font-size: 11px;
+        position: inherit;
+}
+.name {
+    font-weight: bold;
+    position: relative;
+    bottom: 7px;
+}
+.datetime {
+    position: static;
+    float: right;
+}
+.icon_list {
+    position: relative;
+    top: 10px;
+    right: 61px;
+}
+img.like {
+    width: 25px;
+}
+
+.content .main-header {
+    margin-top: 3%;
+    margin-left: 2%;
+    
+}
+
+.primary img {
+    height: 3vw;
+    margin: 3px;
+}
+img.main-img{
+    width: 20vw;
+    height: 20vw;
+
+}
+.buttons {
+    /* width: 6vw; */
+    display: flex; 
+    gap: 2%;
+    text-align: right;
+    justify-content: end;
+      
+    
+}
+#tweet {
+    width: 15%;
+    background-color: #00ACEE;
+    color: aliceblue;
+    border-radius: 3vw;
+    margin-left: 0.5vw;
+    
+}
+
+#cancel {
+    width: 120%;
+    background-color: #00ACEE;
+    color: aliceblue;
+    border-radius: 3vw;
+}
+.icon_list a{
+    text-decoration: none;
+}
